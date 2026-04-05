@@ -52,6 +52,13 @@ body {
   padding: 1.25rem;
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
 .sidebar {
   background: #ffffff;
   border-radius: 8px;
@@ -127,8 +134,44 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.contact-list {
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-social a {
+  color: #0f172a;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-form label {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0.6rem;
+  font: inherit;
+}
+
 @media (max-width: 720px) {
   .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
     grid-template-columns: 1fr;
   }
 }
