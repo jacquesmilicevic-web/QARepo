@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Webpage Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>My Basic Webpage</h1>
+      <nav aria-label="Main menu">
+        <ul class="main-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" aria-label="Sidebar menu">
+        <ul>
+          <li>
+            <a href="#">Sidebar Item 1</a>
+            <ul class="submenu">
+              <li><a href="#">Submenu 1.1</a></li>
+              <li><a href="#">Submenu 1.2</a></li>
+              <li><a href="#">Submenu 1.3</a></li>
+              <li><a href="#">Submenu 1.4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Sidebar Item 2</a>
+            <ul class="submenu">
+              <li><a href="#">Submenu 2.1</a></li>
+              <li><a href="#">Submenu 2.2</a></li>
+              <li><a href="#">Submenu 2.3</a></li>
+              <li><a href="#">Submenu 2.4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Sidebar Item 3</a>
+            <ul class="submenu">
+              <li><a href="#">Submenu 3.1</a></li>
+              <li><a href="#">Submenu 3.2</a></li>
+              <li><a href="#">Submenu 3.3</a></li>
+              <li><a href="#">Submenu 3.4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="content">
+        <h2>Main Content</h2>
+        <p>
+          This is a basic webpage layout with a header, footer, and main section
+          containing a sidebar menu.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Connect with us:</p>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">📘</span> Facebook
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">🐦</span> Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">📸</span> Instagram
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
