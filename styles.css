@@ -135,3 +135,29 @@ h2 {
 .icon {
   font-size: 1.1rem;
 }
+
+.click-emoji {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 1.35rem;
+  pointer-events: none;
+  animation: emoji-pop 0.65s ease-out forwards;
+  z-index: 1000;
+}
+
+@keyframes emoji-pop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20%) scale(0.7);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -70%) scale(1.1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -150%) scale(1);
+  }
+}
