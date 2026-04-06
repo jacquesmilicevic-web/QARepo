@@ -1,0 +1,137 @@
+:root {
+  --bg: #f4f7ff;
+  --card: #ffffff;
+  --text: #1f2a44;
+  --accent: #3b82f6;
+  --accent-dark: #2563eb;
+  --shadow: rgba(37, 99, 235, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.center-page,
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-link,
+.social-btn {
+  text-decoration: none;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-link:hover,
+.social-btn:hover {
+  background: var(--accent-dark);
+  box-shadow: 0 0 10px var(--shadow), 0 0 24px var(--shadow);
+}
+
+.btn-link:active,
+.social-btn:active {
+  transform: translateY(2px) scale(0.99);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) inset;
+}
+
+.menu-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+}
+
+.menu-content {
+  padding: 3rem;
+}
+
+.right-sidebar {
+  background: #e6edff;
+  border-left: 2px solid #c4d3ff;
+  padding: 1.5rem;
+}
+
+.menu-list,
+.menu-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu-list > li {
+  margin-bottom: 1rem;
+}
+
+.menu-list > li > span {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.menu-list ul li {
+  background: #fff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  margin: 0.2rem 0;
+}
+
+.contact-card {
+  width: min(650px, 100%);
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card p {
+  margin: 0.4rem 0 0;
+}
+
+.contact-card a {
+  color: var(--accent-dark);
+}
+
+.social-links {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.icon {
+  font-size: 1.1rem;
+}
